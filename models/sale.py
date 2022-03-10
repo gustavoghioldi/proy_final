@@ -1,3 +1,8 @@
-# debe contener client_dni, client_name, product_name, product_price, quantity
+from models.product import Product
+from models.client import Client
 class Sale:
-    pass
+    def __init__(self, product:Product, client:Client, qty:int):
+        self.product_name  = product.name
+        self.product_price = product.price
+        self.client_dni    = client.dni
+        self.qty           = qty

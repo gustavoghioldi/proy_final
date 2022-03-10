@@ -1,3 +1,5 @@
-#debe contener nombre y producto
+# debe contener dni y nombre
 class Product:
-    pass
+    def __init__(self, name:str, price:str):
+        self.name = name
+        self.price  = price
